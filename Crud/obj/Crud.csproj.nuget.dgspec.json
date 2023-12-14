@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Antemortem\\Desktop\\Crud\\Crud\\Crud.csproj": {}
+    "C:\\Users\\Antemortem\\Desktop\\.NETcourse\\Crud\\Crud\\Crud.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Antemortem\\Desktop\\Crud\\Crud\\Crud.csproj": {
+    "C:\\Users\\Antemortem\\Desktop\\.NETcourse\\Crud\\Crud\\Crud.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Antemortem\\Desktop\\Crud\\Crud\\Crud.csproj",
+        "projectUniqueName": "C:\\Users\\Antemortem\\Desktop\\.NETcourse\\Crud\\Crud\\Crud.csproj",
         "projectName": "Crud",
-        "projectPath": "C:\\Users\\Antemortem\\Desktop\\Crud\\Crud\\Crud.csproj",
+        "projectPath": "C:\\Users\\Antemortem\\Desktop\\.NETcourse\\Crud\\Crud\\Crud.csproj",
         "packagesPath": "C:\\Users\\Antemortem\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Antemortem\\Desktop\\Crud\\Crud\\obj\\",
+        "outputPath": "C:\\Users\\Antemortem\\Desktop\\.NETcourse\\Crud\\Crud\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Antemortem\\AppData\\Roaming\\NuGet\\NuGet.Config",

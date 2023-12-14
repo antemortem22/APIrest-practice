@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "0/d15uOrnP1LT2Dbcpmhzx2MzcXa/ThzP5TyiWpi8ise09GEofYTRaFAMe93SV5iJmNOA0RRGGXSReDgPCC7xg==",
+  "dgSpecHash": "/89JCBt2RCdk6zyaOuNG9rTFCa6ga02kwVRNaaf3Ttu4KiQpZAVDVwxCtgWVmaC1W0DDSY9vR0tZyZy6uLXAWA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Antemortem\\Desktop\\Crud\\Crud\\Crud.csproj",
+  "projectFilePath": "C:\\Users\\Antemortem\\Desktop\\.NETcourse\\Crud\\Crud\\Crud.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Antemortem\\.nuget\\packages\\azure.core\\1.25.0\\azure.core.1.25.0.nupkg.sha512",
     "C:\\Users\\Antemortem\\.nuget\\packages\\azure.identity\\1.7.0\\azure.identity.1.7.0.nupkg.sha512",

@@ -10,7 +10,7 @@ namespace Crud.Controllers
     [ApiController]
 
     [Route("api/[controller]")]
-    public class ActuacionesController :ControllerBase
+    public class ActuacionesController : ControllerBase
     {
         private readonly IMDBContext _context; //Inyeccion de dependencia 
         public ActuacionesController(IMDBContext context)
@@ -23,22 +23,29 @@ namespace Crud.Controllers
         public IActionResult GetActuacionesByName([FromRoute] string nombre)
         {
             var actor = _context.Actores.FirstOrDefault(a => a.Nombre == nombre);
-            var count = _context.Actores.Count();
+            
 
             if (actor == null) return NotFound(new { Error = $"No se pudo encontrar el actor {nombre}." });
 
+            var result = _context.Actores
+                         .Where(w => w.IdActor == actor.IdActor)
+                         .SelectMany(a => a.Actuaciones
+                             .Select(actuacion => new
+                             {
+                                 a.IdActor,
+                                 NombreActor = a.Nombre,
+                                 actuacion.IdActuacion,
+                                 actuacion.Papel,
+                                 TituloPelicula = actuacion.IdPeliculaNavigation.Titulo
+                             })
+                         )
+                         .ToList();
 
 
-
-            var papeles = _context.Actuaciones
-                                  .Where(actuacion => actuacion.IdActor == actor.IdActor)
-                                  .Select(actuacion => actuacion.Papel)
-                                  .ToList();
-
-            if (papeles.Count == 0) return NotFound(new {Error = $"No se encontraron actuaciones para el actor {nombre}."});
+            if (result.Count == 0) return NotFound(new {Error = $"No se encontraron actuaciones para el actor {nombre}."});
             
 
-            return Ok(papeles);
+            return Ok(result);
         }
     }
 }
